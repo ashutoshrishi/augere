@@ -1,3 +1,28 @@
+Running the Application
+=============================
+
+You ofcourse need `nodeJS`.
+
+You need the `node-webkit` binary to run the application. Get it from
+[https://github.com/rogerwang/node-webkit](https://github.com/rogerwang/node-webkit).
+
+Once you have the path to the `nw` binary, specify that path in the `build.py` file (there is an existing
+global variable `NW_BINARY` in it).
+
+As the CSS files are pre processed through LESS, you will need LESS too. Currently, the `build.py`
+compiles the LESS files through the `lessc` command line tool.
+
+`sudo npm install -g less`
+
+Finally you can run the application through:
+
+`python build.py run.nw` (From the same project directory root).
+
+This is just the tire some proces for the initial build. Eventually `nw` will be packaged into it and a easier
+cross platform executable binary will be built.
+
+You can read my semester project abstract here:
+
 Live Article Augmentation Editor.
 =========================================
 
