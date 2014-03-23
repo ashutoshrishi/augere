@@ -30,6 +30,8 @@ if __name__ == '__main__':
     if (sys.argv[1]):
         build_name = sys.argv[1]
 
+    # The LESS files are to be compiled manually for now. Sorry.
+
     buildList = createBuildList()
     # Call the zip
     print "Building following files: "
