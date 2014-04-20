@@ -5,7 +5,9 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: sans-serif;
+  font-family: 'Droid Sans', 'Roboto', sans-serif;
+  line-height: 1.2;
+  vertical-align: middle;
   outline: none;
 }
 html {
@@ -31,19 +33,23 @@ body {
   height: 100%;
 }
 .writing-text {
-  font-family: sans-serif;
-  font-size: 11pt;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 #editor {
   position: relative;
-  background: #eeeeee;
+  background: #f5f5f5;
   height: 100%;
   margin: 0px;
   overflow: hidden;
   overflow-y: auto;
   width: auto;
-  font-family: sans-serif;
-  font-size: 11pt;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 #modules {
   position: relative;
@@ -51,7 +57,7 @@ body {
   margin: 0px;
   width: 350px;
   float: right;
-  background: #333333;
+  background: whitesmoke;
   height: 100%;
 }
 #actionbar {
@@ -60,9 +66,16 @@ body {
   height: 20px;
   margin: 0;
   padding: 0;
-  background: #000;
+  background: #111;
   z-index: 200;
   bottom: 0px;
+}
+#stage {
+  color: #4d4d4d;
+  font: 12px "Droid Sans", sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
 }
 /* Styles for some special ui elements */
 #search-box {
@@ -75,4 +88,55 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   color: white;
+}
+h2#title {
+  font-weight: normal;
+}
+.status-bar-elements {
+  margin-left: 10px;
+  color: #eee;
+  font-size: 0.75em;
+}
+#font-family-select {
+  margin-left: 10px;
+  color: #eee;
+  font-size: 0.75em;
+}
+#font-size-select {
+  margin-left: 10px;
+  color: #eee;
+  font-size: 0.75em;
+}
+#word-count-display {
+  margin-left: 10px;
+  color: #eee;
+  font-size: 0.75em;
+}
+.box-simple {
+  padding: 0.75rem;
+  box-shadow: 0 1px 2px #aaa;
+  background: white;
+  margin: 0.5rem 0.5rem 0.5rem;
+  border-radius: 3px;
+  user-select: none;
+  animation: fly-in-from-left 0.5s 1s ease both;
+  transform-origin: top left;
+  color: #4d4d4d;
+}
+.card:nth-child(even) {
+  animation-name: fly-in-from-right;
+  animation-delay: 1.1s;
+  transform-origin: top right;
+}
+@keyframes fly-in-from-left {
+  from {
+    transform: translateY(15rem) rotate(15deg);
+    opacity: 0;
+  }
+}
+@keyframes fly-in-from-right {
+  from {
+    transform: translateY(15rem) rotate(-15deg);
+    opacity: 0;
+  }
 }

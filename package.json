@@ -1,9 +1,12 @@
 {
-    "name": "Augere - Augmentation Editor",
+    "name": "augere",
     "main": "index.html",
     "window": {
-        "toolbar": false,
+        "toolbar": true,
         "width": 1000,
         "height": 600
+    },
+    "scripts": {
+        "start": "nodewebkit"
     }
 }

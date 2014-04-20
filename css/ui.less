@@ -1,5 +1,5 @@
-
-@bg-light: #EEEEEE;
+@font-light: #4D4D4D;
+@bg-light: whitesmoke;
 @bg-cream: #BBBBBB;
 @bg-white: #FFFFFF;
 @bg-dark: rgba(51, 51, 51, 1);
@@ -14,10 +14,11 @@
 
 * {
     .normal;
-    font-family: sans-serif;
+    font-family: 'Droid Sans', 'Roboto', sans-serif;
+    line-height:1.2;
+    vertical-align: middle;
     outline: none;
 }
-
 
 html {
     height: 100%;
@@ -43,8 +44,10 @@ body {
 }
 
 .writing-text {
-    font-family: sans-serif;
-    font-size: 11pt;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 #editor {
@@ -65,7 +68,7 @@ body {
     margin: 0px;
     width: 350px;
     float: right;
-    background: @bg-modules;
+    background: whitesmoke;
     height: 100%;
     // text-align: center;
 }
@@ -76,11 +79,18 @@ body {
     height: 20px;
     margin: 0;
     padding: 0;
-    background: #000;
+    background: #111;
     z-index: 200;
     bottom: 0px;
 }
 
+#stage {
+    color: @font-light;
+    font: 12px "Droid Sans", sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
 
 
 @import "ui-elements";
