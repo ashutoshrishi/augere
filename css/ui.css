@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic);
 .normal {
   margin: 0px;
   padding: 0px;
@@ -5,7 +6,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Droid Sans', 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Droid Sans', sans-serif;
   line-height: 1.2;
   vertical-align: middle;
   outline: none;
@@ -33,23 +34,19 @@ body {
   height: 100%;
 }
 .writing-text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  padding-left: 10px;
-  padding-top: 10px;
+  font-family: 'Roboto', 'Droid Sans', "Open Sans", sans-serif;
+  font-size: 12pt;
 }
 #editor {
   position: relative;
-  background: #f5f5f5;
+  background: white;
   height: 100%;
   margin: 0px;
   overflow: hidden;
   overflow-y: auto;
   width: auto;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  padding-left: 10px;
-  padding-top: 10px;
+  font-family: 'Roboto', 'Droid Sans', "Open Sans", sans-serif;
+  font-size: 12pt;
 }
 #modules {
   position: relative;
@@ -59,6 +56,7 @@ body {
   float: right;
   background: whitesmoke;
   height: 100%;
+  overflow-y: auto;
 }
 #actionbar {
   position: absolute;
@@ -66,6 +64,7 @@ body {
   height: 20px;
   margin: 0;
   padding: 0;
+  padding-bottom: 1px;
   background: #111;
   z-index: 200;
   bottom: 0px;
@@ -79,15 +78,15 @@ body {
 }
 /* Styles for some special ui elements */
 #search-box {
-  background-color: #262626;
-  width: 100%;
-  padding: 3px;
-  border: 0px solid #CCCCCC;
-  height: 30px;
-  margin: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
+  width: 80%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  border: 0;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px #aaa;
 }
 h2#title {
   font-weight: normal;
@@ -122,6 +121,18 @@ h2#title {
   animation: fly-in-from-left 0.5s 1s ease both;
   transform-origin: top left;
   color: #4d4d4d;
+}
+input {
+  display: block;
+  transition: 0.5s, margin-bottom 0.15s;
+}
+.box-simple > span#body small {
+  font-size: 1em;
+}
+.box-simple hr {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  border: 1px solid whitesmoke;
 }
 .card:nth-child(even) {
   animation-name: fly-in-from-right;

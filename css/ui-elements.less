@@ -3,17 +3,16 @@
 
 // Search box styles, ephemeral, in the top of modules column
 #search-box {
-    background-color: rgba(38, 38, 38, 1);
-    width: 100%;
-    padding: 3px;
-    border: 0px solid #CCCCCC;
-    height: 30px;
-    margin: 0px;
-    // border-radius: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    // margin-left: 15px;
-    color: white;
+    width: 80%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    border:0;
+    font-size:1rem;
+    padding:.5rem 1rem;
+    border-radius:3px;
+    box-shadow:0 1px 2px #aaa;
+    
 }
 
 h2#title {
@@ -50,7 +49,28 @@ h2#title {
     animation:fly-in-from-left .5s 1s ease both;
     transform-origin:top left;
     color: @font-light;
+
 }
+
+input {
+  display:block;
+  
+transition:.5s, margin-bottom .15s;
+}
+
+
+.box-simple > span#body {
+    small {
+        font-size: 1em;
+    }
+}
+
+.box-simple hr {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    border: 1px solid whitesmoke;
+}
+
 .card:nth-child(even){
     animation-name:fly-in-from-right;
     animation-delay:1.1s;
@@ -71,3 +91,8 @@ h2#title {
     }
 }
 
+#search-box-addon {
+
+
+    
+}

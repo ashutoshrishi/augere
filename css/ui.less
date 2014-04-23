@@ -6,6 +6,7 @@
 @bg-editor: @bg-light;
 @bg-modules: @bg-dark;
 
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic);
 
 .normal {
     margin: 0px;
@@ -14,7 +15,7 @@
 
 * {
     .normal;
-    font-family: 'Droid Sans', 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Droid Sans', sans-serif;
     line-height:1.2;
     vertical-align: middle;
     outline: none;
@@ -44,15 +45,13 @@ body {
 }
 
 .writing-text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    padding-left: 10px;
-    padding-top: 10px;
+    font-family: 'Roboto', 'Droid Sans', "Open Sans", sans-serif;
+    font-size: 12pt;
 }
 
 #editor {
     position: relative;
-    background: @bg-editor;
+    background: white;
     height: 100%;
     margin: 0px;
     overflow: hidden;
@@ -70,6 +69,7 @@ body {
     float: right;
     background: whitesmoke;
     height: 100%;
+    overflow-y: auto;
     // text-align: center;
 }
 
@@ -79,6 +79,7 @@ body {
     height: 20px;
     margin: 0;
     padding: 0;
+    padding-bottom: 1px;
     background: #111;
     z-index: 200;
     bottom: 0px;
@@ -90,7 +91,6 @@ body {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
+    
 }
-
-
 @import "ui-elements";
